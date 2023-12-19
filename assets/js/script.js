@@ -1,8 +1,14 @@
 const campoValorEquip = document.getElementById('valorEquip')
 const campoValorSucata = document.getElementById('valorSucata')
 const campoVidaUtil = document.getElementById('vidaUtil')
+
+
 const campoTempoUso = document.getElementById('tempoUso')
+const campoValorDeprec = document.getElementById('valorDepreciacao')
 
 document.getElementById("calcular").addEventListener('click',function(){
-    if(campoValorEquip > 0 && campoValorSucata > 0 && campoVidaUtil > 0){}
-})
+    let result = ((campoValorEquip.value - campoValorSucata.value)/campoVidaUtil.value)
+    campoValorDeprec.value = result.toFixed(2)
+    
+
+    })

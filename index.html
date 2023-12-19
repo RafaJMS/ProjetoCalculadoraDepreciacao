@@ -16,29 +16,26 @@
         <div class = "content-box">
         <div class = "input-box" >
             <section class="linhaEquipamento">
-                <label> Valor Equipamento</label>
-                <input type="text" id="valorEquip" >
+                <label> Valor Equipamento (R$)</label>
+                <input type="number" id="valorEquip" >
             </section>
             <section class="linhaSucata">
-                <label> Valor Sucata </label>
-                <input type="text" id="valorSucata" >
+                <label> Valor Sucata (R$)</label>
+                <input type="number" id="valorSucata" >
             </section>
             <section class="linhavidaUtil">
-                <label> Vida Util </label>
-                <input type="text" id="vidaUtil">
+                <label> Vida Util (Anos)</label>
+                <input type="number" id="vidaUtil">
             </section>
-            <section class="linhaTempoUso">
-                <label> Tempo de Uso </label>
-                <input type="text" id="tempoUso">
-            </section>
+            
         </div>
         <div class="button-box">
             <button type="submit" id="calcular">- Calcular -</button>
         </div>
         <div class="awnser-box">
             <section class="linhaValorDepreciacao">
-            <label> Valor de Depreciação </label>
-                <input type="text" >
+            <label> Valor de Depreciação (R$)</label>
+                <input type="text" readonly id="valorDepreciacao">
             </section>
         </div>
         </div>
@@ -49,4 +46,7 @@
     
 </body>
 <script src="assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </html>

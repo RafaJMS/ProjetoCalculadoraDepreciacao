@@ -1,10 +1,11 @@
 *{
     padding: 0;
     margin: 0;
-    
+    color: aliceblue;
     box-sizing: content-box;
     
 }
+
 
 .titulo{
     margin: 1.5rem;
@@ -33,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    background-color: rgb(100, 83, 83);
 }
 .major-box{
     width: auto;
@@ -42,7 +43,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid gray;
+    border: 3px solid rgb(12, 176, 197);
     border-radius: 1rem;
     
 }
@@ -58,20 +59,35 @@
     align-items: center;
     
 }
+.input-box{
+    display: flex;
+    flex-direction: row;
+}
 
 .input-box input{
     margin: 0.5rem;
-    height: 2rem;
+    height: 1.7rem;
     width: 90%;
     max-width: 10rem;
     border-radius: 0.3rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
+    color: #000;
+}
+.awnser-box input{
+    margin: 0.5rem;
+    height: 1.7rem;
+    width: 90%;
+    max-width: 10rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-size: 17px;
+    color: #000;
 }
 
 .button-box{
     width: 100%;
-    max-width: 50rem;
+    max-width: 20rem;
     height: 2rem;
     display: flex;
     justify-content: center;
@@ -84,4 +100,5 @@
     height: 90%;
     border-radius: 1rem;
     font-size: 16px;
+    color: black;
 }
