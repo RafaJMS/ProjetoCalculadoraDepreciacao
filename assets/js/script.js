@@ -4,11 +4,19 @@ const campoVidaUtil = document.getElementById('vidaUtil')
 
 
 const campoTempoUso = document.getElementById('tempoUso')
-const campoValorDeprec = document.getElementById('valorDepreciacao')
+
 
 document.getElementById("calcular").addEventListener('click',function(){
-    let result = ((campoValorEquip.value - campoValorSucata.value)/campoVidaUtil.value)
-    campoValorDeprec.value = result.toFixed(2)
     
-
+    let campoValorDeprec = document.getElementById('valorDepreciacao')
+    
+    let result = ((campoValorEquip.value - campoValorSucata.value)/campoVidaUtil.value)
+    
+    if(campoValorDeprec.value!=null){
+        campoValorDeprec.innerText = `R$ ${result.toFixed(2)}`
+        
+    }else{
+        campoValorDeprec.value = 0
+    }
+    
     })

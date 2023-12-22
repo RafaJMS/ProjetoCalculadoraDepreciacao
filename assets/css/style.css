@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     color: aliceblue;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    
     
 }
-
-
 .titulo{
     margin: 1.5rem;
-    font-size: 25px;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
 }
 .awnser-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .awnser-box input{
     margin: 0.5rem;
@@ -34,51 +39,72 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(100, 83, 83);
+    background-color: rgb(61, 60, 60);
 }
 .major-box{
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-width: 80vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid rgb(12, 176, 197);
+    border: 1px solid;
+    border-color: green;
     border-radius: 1rem;
-    
+    background-color: rgb(0, 0, 0);
 }
 .content-box{
-    font-size: 20px;
+    margin-top: 1.5rem;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:1.5rem;
+    width: 100%;
+    height: 100%;
+    }
+
+.content-box input:focus{
+    outline:none ;
 }
 
 .content-box section{
-    margin: 1.0rem;
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
+   
 }
 .input-box{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 .input-box input{
     margin: 0.5rem;
     height: 1.7rem;
-    width: 90%;
-    max-width: 10rem;
+    width: 80%;
+    max-width: 50rem;
     border-radius: 0.3rem;
     text-align: center;
     font-size: 17px;
-    color: #000;
+    color: white;
+    background-color: #000;
+    border:1px solid;
+    border-color: rgba(0, 128, 0, 0.336);
 }
+
 .awnser-box input{
     margin: 0.5rem;
     height: 1.7rem;
-    width: 90%;
-    max-width: 10rem;
+    width: 100%;
+    max-width: 20rem;
     border-radius: 0.3rem;
     text-align: center;
     font-size: 17px;
@@ -87,18 +113,29 @@
 
 .button-box{
     width: 100%;
-    max-width: 20rem;
-    height: 2rem;
+    max-width: 100rem;
+    height: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem auto;
 }
 
 .button-box button{
-    width: 60%;
-    height: 90%;
-    border-radius: 1rem;
+    width: 35%;
+    height: 100%;
     font-size: 16px;
-    color: black;
+    color: white;
+    background-color: #000;
+    border-radius: 1rem;
+    border: 1px solid;
+    border-color:green;
+    cursor: pointer;
+}
+hr{
+    width: 100%;
+    border-color:green;
+}
+
+#valorDepreciacao{
+    margin-top: 0.5rem;
 }
