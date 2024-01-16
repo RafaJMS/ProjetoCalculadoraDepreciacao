@@ -43,7 +43,8 @@
 }
 .major-box{
     width: 100%;
-    max-width: 70vw;
+    max-width: 55
+    vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -131,6 +132,12 @@
     border-color:green;
     cursor: pointer;
 }
+
+.button-box button:hover{
+    background-color: green;
+    border-color:black;
+}
+
 hr{
     width: 100%;
     border-color:green;
