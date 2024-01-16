@@ -43,8 +43,7 @@
 }
 .major-box{
     width: 100%;
-    max-width: 55
-    vw;
+    max-width: 55vw;
     height: 100%;
     display: flex;
     flex-direction: column;
